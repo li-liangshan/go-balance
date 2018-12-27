@@ -6,11 +6,13 @@
 
 package main
 
-import "go-balance/chapter01"
+import "go-balance/rearch"
 
 func main() {
 	//ExpDup()
 	//ExpEcho()
-	//chapter01.ExpTest01()
-	chapter01.Plot()
+	//rearch.ExpTest01()
+	//rearch.Plot()
+
+	rearch.RestApi()
 }

@@ -4,7 +4,7 @@
  * @Last Modified by: liliangshan
  * *************************************************/
 
-package chapter01
+package rearch
 
 import (
 	"image"

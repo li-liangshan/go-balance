@@ -4,8 +4,13 @@
  * @Last Modified by: liliangshan
  * *************************************************/
 
-package chapter01
+package main
 
-func Fetch() {
+import (
+	"go-balance/rearch"
+	"testing"
+)
 
+func TestExpEcho(t *testing.T) {
+	rearch.ExpEcho()
 }
