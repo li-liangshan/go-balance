@@ -6,7 +6,7 @@
 
 package main
 
-import "go-balance/times"
+import "go-balance/web"
 
 func main() {
 	//ExpDup()
@@ -16,9 +16,11 @@ func main() {
 
 	//rearch.RestApi()
 
-	times.TestTimes()
+	//times.TestTimes()
 
-	var channel = make(chan int)
+	//var channel = make(chan int)
 
-	<-channel
+	//<-channel
+
+	web.WebTest()
 }
