@@ -18,9 +18,17 @@ func main() {
 
 	//times.TestTimes()
 
-	//var channel = make(chan int)
+	//web.WebTest()
 
-	//<-channel
+	TestRPC()
+}
 
-	web.WebTest()
+func TestRPC() {
+	var channel = make(chan int)
+	//go web.TestServerRPC()
+	//go web.TestClientRPC()
+
+	go web.TestTcpServerRPC()
+	go web.TestTcpClientRPC()
+	<-channel
 }

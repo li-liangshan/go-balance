@@ -6,4 +6,8 @@
 
 package web
 
+import "github.com/gorilla/websocket"
 
+func Echo(ws *websocket.Conn) {
+
+}
