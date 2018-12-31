@@ -6,7 +6,10 @@
 
 package main
 
-import "go-balance/web"
+import (
+	"go-balance/items"
+	"go-balance/web"
+)
 
 func main() {
 	//ExpDup()
@@ -20,7 +23,7 @@ func main() {
 
 	//web.WebTest()
 
-	TestRPC()
+	TestItems()
 }
 
 func TestRPC() {
@@ -31,4 +34,8 @@ func TestRPC() {
 	go web.TestTcpServerRPC()
 	go web.TestTcpClientRPC()
 	<-channel
+}
+
+func TestItems() {
+	items.Items03()
 }
