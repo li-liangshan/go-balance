@@ -8,6 +8,7 @@ package main
 
 import (
 	"go-balance/items"
+	"go-balance/runner"
 	"go-balance/web"
 )
 
@@ -23,7 +24,7 @@ func main() {
 
 	//web.WebTest()
 
-	TestItems()
+	TestRunnerExp()
 }
 
 func TestRPC() {
@@ -38,4 +39,8 @@ func TestRPC() {
 
 func TestItems() {
 	items.Items03()
+}
+
+func TestRunnerExp() {
+	runner.TestRunner()
 }
